@@ -1,0 +1,6 @@
+<h1>LIST OF SONGS</h1>
+<ul> <% @songs.map do |song| %>
+  <li><a href="/songs/<%=song.id%>">
+    <%= song.name%></a></li>
+<% end %>
+</ul>
