@@ -1,6 +1,6 @@
 <h1>LIST OF ARTISTS</h1>
 <ul> <% @artists.map do |artist| %>
-  <li><a href="/artists/<%=artist.id%>">
+  <li><a href="/artists/<%=artist.slug%>">
     <%= artist.name%></a></li>
 <% end %>
 </ul>
